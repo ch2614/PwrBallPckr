@@ -16,7 +16,7 @@ namespace PwrBallPckr
 
       pbPicks = new List<string>();
 
-      for (int i = 1; i <= 10000000; i= i+1 )
+      for (int i = 1; i <= 50000000; i= i+1 )
         {
           var numlist = Enumerable.Range(1, 69).ToList();
         
@@ -44,9 +44,13 @@ namespace PwrBallPckr
 
           var pb = rnd.Next(1, 26);
 
-          pbLine = num1 + "-" + num2 + "-" + num3 + "-" + num4 + "-" + num5 + "---" + pb;
-          pbPicks.Add(pbLine);
+          var comp_sum = num1 + num2 + num3 + num4 + num5 + pb;
 
+          if (comp_sum >= 149 && comp_sum <= 189) //this is the minimum sum and maximum sum of drawings from 2016 & 2017
+          {
+            pbLine = num1 + "-" + num2 + "-" + num3 + "-" + num4 + "-" + num5 + "---" + pb;
+            pbPicks.Add(pbLine);
+          }
           //Console.WriteLine("Numbers:  {0}, {1}, {2}, {3}, {4} -- {5}", num1, num2, num3, num4, num5, pb);
        }
 
