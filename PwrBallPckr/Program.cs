@@ -10,8 +10,8 @@ namespace PwrBallPckr
 
     static void Main(string[] args)
     {
-      //white 69
-      //red 26
+      //69 total white balls
+      //26 total red (power) balls
 
       string pbLine;
       List<string> pbPicks;
