@@ -6,9 +6,7 @@ namespace PwrBallPckr
 {
     class Program
   {
-    private static readonly object pause;
-
-    static void Main(string[] args)
+     static void Main(string[] args)
     {
       //69 total white balls
       //26 total red (power) balls
